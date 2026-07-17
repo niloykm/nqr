@@ -27,3 +27,10 @@
 .animate-slide-in {
   animation: slideIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+.qr-preview-container canvas,
+.qr-preview-container svg {
+  max-width: 100% !important;
+  height: auto !important;
+}
+

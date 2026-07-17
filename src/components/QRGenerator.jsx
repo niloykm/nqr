@@ -272,7 +272,7 @@ const QRGenerator = ({ isPro, onGenerateSuccess, addAlert }) => {
         {/* Content Type Selector */}
         <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-xl">
           <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Select Content Type</h3>
-          <div className="grid grid-cols-5 gap-2">
+          <div className="grid grid-cols-4 sm:grid-cols-8 gap-2">
             {[
               { id: 'url', label: 'URL', icon: <Globe className="h-4 w-4" /> },
               { id: 'wifi', label: 'WiFi', icon: <Wifi className="h-4 w-4" /> },
@@ -660,7 +660,7 @@ const QRGenerator = ({ isPro, onGenerateSuccess, addAlert }) => {
         {/* Render container */}
         <div 
           ref={previewRef} 
-          className="p-4 bg-white rounded-2xl border border-slate-100 shadow-inner flex items-center justify-center min-h-[220px] min-w-[220px]"
+          className="p-4 bg-white rounded-2xl border border-slate-100 shadow-inner flex items-center justify-center w-full max-w-[320px] aspect-square qr-preview-container"
         />
 
         {/* Size Slider */}

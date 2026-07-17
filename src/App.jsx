@@ -145,7 +145,7 @@ const App = () => {
       <main className="flex-1 max-w-7xl w-full mx-auto px-6 py-8 flex flex-col gap-6">
         
         {/* Navigation Tabs */}
-        <div className="flex items-center gap-1.5 p-1.5 bg-slate-100 dark:bg-slate-900/60 backdrop-blur-md rounded-2xl border border-slate-200/50 dark:border-slate-800/40 w-fit self-center sm:self-start">
+        <div className="flex items-center gap-1.5 p-1.5 bg-slate-100 dark:bg-slate-900/60 backdrop-blur-md rounded-2xl border border-slate-200/50 dark:border-slate-800/40 w-full sm:w-auto overflow-x-auto custom-scroll flex-nowrap self-stretch sm:self-start">
           {[
             { id: 'generate', label: 'Generator', icon: <Sliders className="h-4 w-4" /> },
             { id: 'bulk', label: 'Bulk Export', icon: <Layers className="h-4 w-4" /> },
